@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Six Months of Free Scholarship!"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "#"
 
 # Features
 features:

@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "شش ماه بورسیه رایگان!"
-    link: "https://github.com/zeon-studio/hugoplate"
+    link: "#"
 
 # ویژگی‌ها
 features:
