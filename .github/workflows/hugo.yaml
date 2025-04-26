@@ -33,7 +33,7 @@ jobs:
     env:
       HUGO_VERSION: 0.145.0
       HUGO_ENVIRONMENT: production
-      TZ: America/Los_Angeles
+      TZ: Asia/Tehran
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -55,6 +55,11 @@ jobs:
           if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then
             npm ci
           fi
+
+      - name: Install TailwindCSS CLI
+        run: |
+          npm install -D tailwindcss
+          npx tailwindcss --help  # Confirm installed
 
       - name: Setup Pages
         id: pages
