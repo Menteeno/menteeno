@@ -1,0 +1,63 @@
+############# Navigation in Persian ##############
+
+# منوی اصلی
+[[main]]
+name = "خانه"
+url = "/"
+weight = 1
+
+[[main]]
+name = "درباره"
+url = "/about"
+weight = 2
+
+[[main]]
+name = "عناصر"
+url = "/elements"
+weight = 3
+
+[[main]]
+weight = 4
+name = "صفحات"
+
+[[main]]
+parent = "صفحات"
+name = "وبلاگ"
+url = "/blog"
+
+[[main]]
+parent = "صفحات"
+name = "تماس"
+url = "/contact"
+
+[[main]]
+parent = "صفحات"
+name = "نویسندگان"
+url = "/authors"
+
+[[main]]
+parent = "صفحات"
+name = "دسته‌بندی‌ها"
+url = "/categories"
+
+[[main]]
+parent = "صفحات"
+name = "صفحه ۴۰۴"
+url = "/404"
+
+
+# منوی فوتر
+[[footer]]
+name = "درباره"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "عناصر"
+url = "/elements"
+weight = 2
+
+[[footer]]
+name = "سیاست حفظ حریم خصوصی"
+url = "/privacy-policy"
+weight = 3

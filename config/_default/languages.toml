@@ -1,0 +1,15 @@
+################ English language ##################
+[en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+languageDirection = "ltr"
+
+############### Persian language ##################
+[fa]
+languageName = "Fa"
+languageCode = "fa-ir"
+contentDir = "content/persian"
+weight = 2
+languageDirection = "rtl"
