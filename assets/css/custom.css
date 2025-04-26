@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'DanaVF';
+  src: url('../fonts/dana/DanaVF.woff2') format('woff2-variations'),
+    url('../fonts/DanaVF.woff') format('woff-variations');
+  font-weight: 100 900;
+  font-display: fallback;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DanaFont';
+  src: url('../fonts/dana/staticfonts/Dana-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DanaFont';
+  src: url('../fonts/dana/staticfonts/Dana-Bold.woff') format('woff');
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@layer theme {
+
+  :root,
+  :host {
+    --font-weight-bold: 750;
+  }
+}
