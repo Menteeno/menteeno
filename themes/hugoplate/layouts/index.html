@@ -23,9 +23,13 @@
         {{ end }}
       </div>
       <div class="col-12">
-        {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]"
-        "DisplayXL" "800x") }}
+        {{ with resources.Get "images/desk.lottie" }}
+        <dotlottie-player src="{{ .RelPermalink }}" autoplay loop class="mx-auto lg:!max-w-[600px]" />
+        {{ else }}
+        {{ warnf "Failed to load Lottie file: images/desk.lottie" }}
+        {{ end }}
       </div>
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
     </div>
   </div>
 </section>
