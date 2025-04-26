@@ -31,14 +31,18 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Vazirmatn:wght@400;600",
+      "primary": "DanaVF",
       "primary_type": "sans-serif",
-      "secondary": "Vazirmatn:wght@500;700",
+      "secondary": "DanaVF",
       "secondary_type": "sans-serif"
     },
     "font_size": {
       "base": "16",
       "scale": "1.2"
+    },
+    "font_weight": {
+      "normal": "400",
+      "bold": "900"
     }
   }
 }
