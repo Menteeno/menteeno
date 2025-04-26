@@ -1,4 +1,6 @@
 {{ define "main" }}
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
+
 
 {{/* Shared Variables */}}
 {{ $arrowClass := cond (eq site.Language.LanguageDirection "rtl") "fa fa-arrow-left" "fa fa-arrow-right" }}
@@ -29,7 +31,6 @@
         {{ warnf "Failed to load Lottie file: images/desk.lottie" }}
         {{ end }}
       </div>
-      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
     </div>
   </div>
 </section>
@@ -66,7 +67,6 @@
         {{ end }}
       </div>
     </div>
-  </div>
 </section>
 {{ end }}
 <!-- /Features -->
@@ -117,5 +117,6 @@
 {{ end }}
 {{ end }}
 <!-- /Testimonials -->
+
 
 {{ end }}
