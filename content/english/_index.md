@@ -1,56 +1,62 @@
 ---
 # Banner
 banner:
-  title: "Menteeno, A New Approach to Career Growth"
-  content: "Menteeno helps you design your career path in the best possible way by enhancing both soft and technical skills, setting you apart from the competition."
+  title: "Mentino, A New Path for Your Growth"
+  content: "At Mentino, you’ll learn how to build your soft skills and shine in your career. We provide tools to help you progress effortlessly, track your growth, and move forward faster. Mentino is here to help you **stand out from the crowd**."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Six Months of Free Scholarship!"
-    link: "#"
+    label: "Get a Free Scholarship!"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 
 # Features
 features:
-  - title: "Mentorship at Menteeno"
+  - title: "With Mentino, You Hit the Jackpot! 🎲"
     image: "/images/service-1.svg"
-    content: "At Menteeno, we support you for six months to strengthen your soft skills and grow in your career path. Mentors accompany you at every step of this professional journey."
+    content: "
+    <span class='font-bold text-3xl'>6</span> months of free learning scholarship
+    <br />
+    <span class='font-bold text-3xl'>6</span> mentorship sessions with experts
+    "
     bulletpoints:
-      - "Personalized and specialized mentorship"
-      - "Custom personal growth plan"
-      - "6 online sessions with professional mentors"
-      - "Continuous support and consultation"
-      - "Practical challenges to enhance skills"
-      - "Detailed and expert feedback from coaches"
-      - "Accurate and periodic progress reports"
+      - "Personalized learning plan"
+      - "Team skill development and networking opportunities"
+      - "Personal support and guidance throughout your growth journey"
+      - "Expert feedback and coaching from mentors"
+      - "Regular assessments to track progress"
+      - "Real-world team challenges for hands-on experience"
     button:
       enable: true
-      label: "Apply for Free"
-      link: "#"
+      label: "Start Growing Now"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 
-  - title: "Why Menteeno for Your Career Growth?"
+  - title: "The Winning Edge in Today’s Job Market"
     image: "/images/service-2.svg"
-    content: "Menteeno focuses on developing soft skills to help you not only advance in your career but also become an outstanding professional. You'll benefit from experienced mentors and customized programs."
+    content: "Programming and technical skills are far easier today than 20 years ago. Languages, frameworks, and tools are becoming more accessible, and AI is accelerating this trend. Now, the real differentiator in the job market is soft skills—effective communication, time management, and teamwork. Those who invest in these skills will have a brighter career future."
     bulletpoints:
-      - "Industry-experienced mentors"
-      - "Personalized training programs"
-      - "Networking opportunities with professionals"
-      - "Increased confidence and leadership skills"
-      - "Continuous support throughout the program"
+      - "Shape your career path"
+      - "Build effective communication skills"
+      - "Become a key team player"
+      - "Secure your professional future"
+      - "Gain more trust and respect"
+      - "Make better decisions under pressure"
     button:
       enable: true
-      label: "Get Started"
-      link: "#"
+      label: "Start Your Growth Journey!"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 
-  - title: "Personal Growth with Menteeno"
+  - title: "Personal Growth with Mentino"
     image: "/images/service-3.svg"
-    content: "At Menteeno, we value your personal growth. Alongside enhancing professional skills, we help you master key skills such as effective communication and time management."
+    content: "At Mentino, we give individualized attention to every user. We identify communication skills, personal strengths/weaknesses, and design tailored growth plans. Our goal is to support your professional and personal success."
     bulletpoints:
-      - "Strengthening communication and social skills"
-      - "Training in leadership and team management"
-      - "Boosting confidence and solving complex problems"
-      - "Teaching time and stress management techniques"
+      - "Identify skills needing improvement"
+      - "Custom plans to address weaknesses"
+      - "Develop leadership and management skills"
+      - "Boost confidence and personal efficiency"
+      - "Enhance problem-solving and decision-making"
+      - "Strengthen teamwork and collaboration"
     button:
-      enable: false
-      label: ""
-      link: ""
+      enable: true
+      label: "Let’s Begin!"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 ---
