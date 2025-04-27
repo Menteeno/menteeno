@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "بورسیه‌ی رایگان بگیر!"
-    link: "#"
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 
 # ویژگی‌ها
 features:
@@ -28,7 +28,7 @@ features:
     button:
       enable: true
       label: "همین حالا رشدت رو شروع کن"
-      link: "#"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 
   - title: "برگ برنده‌ی دنیای کار امروز"
     image: "/images/service-2.svg"
@@ -46,7 +46,7 @@ features:
     button:
       enable: true
       label: "رشد خودتو شروع کن!"
-      link: "#"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 
   - title: "رشد شخصی با منتینو"
     image: "/images/service-3.svg"
@@ -61,5 +61,5 @@ features:
     button:
       enable: true
       label: "شروع کنیم!"
-      link: "#"
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
 ---
