@@ -33,4 +33,24 @@
       },
     },
   });
+
+  new Swiper(".team-slider", {
+    spaceBetween: 24,
+    loop: false,
+    pagination: {
+      el: ".team-slider-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 4, // For medium screens and above
+        spaceBetween: 30,
+      },
+      480: {
+        slidesPerView: 2, // For mobile, shows 1 item per slide
+        spaceBetween: 10,
+      },
+    },
+  });
 })();
