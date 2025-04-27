@@ -1,6 +1,5 @@
 {{ define "main" }}
-<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
-
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js" defer></script>
 
 {{/* Shared Variables */}}
 {{ $arrowClass := cond (eq site.Language.LanguageDirection "rtl") "fa fa-arrow-left" "fa fa-arrow-right" }}
@@ -34,6 +33,16 @@
     </div>
   </div>
 </section>
+<style>
+  dotlottie-player {
+    display: block;
+    min-height: 400px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+</style>
 {{ end }}
 <!-- /Banner -->
 
