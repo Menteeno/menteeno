@@ -98,6 +98,7 @@ ordered = true
 [mediaTypes]
 [mediaTypes."application/manifest+json"]
 suffixes = ["webmanifest"]
+protocol = "https"
 
 
 ########################### Output Format ##########################
@@ -105,12 +106,14 @@ suffixes = ["webmanifest"]
 [outputFormats.WebAppManifest]
 mediaType = "application/manifest+json"
 rel = "manifest"
+protocol = "https"
 
 [outputFormats.SearchIndex]
 mediaType = "application/json"
 baseName = "searchindex"
 isPlainText = true
 notAlternative = true
+protocol = "https"
 
 
 ############################# Plugins ##############################
