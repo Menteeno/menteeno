@@ -59,7 +59,8 @@ target = 'assets/notwatching/hugo_stats.json'
 
 ############################# Outputs ############################
 [outputs]
-home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
+home = ["HTML", "RSS"]
+# home = ["HTML", "RSS", "WebAppManifest", "SearchIndex"]
 
 ############################# Imaging ############################
 [imaging]
@@ -95,25 +96,25 @@ ordered = true
 
 
 ########################### Media types ###########################
-[mediaTypes]
-[mediaTypes."application/manifest+json"]
-suffixes = ["webmanifest"]
-protocol = "https"
+# [mediaTypes]
+# [mediaTypes."application/manifest+json"]
+# suffixes = ["webmanifest"]
+# protocol = "https"
 
 
 ########################### Output Format ##########################
-[outputFormats]
-[outputFormats.WebAppManifest]
-mediaType = "application/manifest+json"
-rel = "manifest"
-protocol = "https"
+# [outputFormats]
+# [outputFormats.WebAppManifest]
+# mediaType = "application/manifest+json"
+# rel = "manifest"
+# protocol = "https"
 
-[outputFormats.SearchIndex]
-mediaType = "application/json"
-baseName = "searchindex"
-isPlainText = true
-notAlternative = true
-protocol = "https"
+# [outputFormats.SearchIndex]
+# mediaType = "application/json"
+# baseName = "searchindex"
+# isPlainText = true
+# notAlternative = true
+# protocol = "https"
 
 
 ############################# Plugins ##############################
