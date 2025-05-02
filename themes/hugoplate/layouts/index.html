@@ -83,41 +83,41 @@
 
 {{/*  CountDown  */}}
 
-<section id="countdown-section" class="section bg-gradient-to-r from-[{{ .Site.Data.theme.colors.default.theme_color.primary }}] to-[{{ .Site.Data.theme.colors.default.theme_color.dark }}] text-white p-8 py-22">
+<section id="countdown-section" class="section bg-gradient-to-r from-[#4CCB7C] to-[#38a864] text-white p-8 py-22">
   <div class="container">
     <div class="text-center">
-      <h2 class="text-3xl sm:text-4xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}] mb-6">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-6">
         {{ .Params.countdown.title }}
       </h2>
       <p class="text-lg sm:text-xl mb-8">
         {{ .Params.countdown.description }}
       </p>
     </div>
-    <div id="countdown" dir="ltr" class="grid grid-cols-2 py-8 sm:grid-cols-4 gap-6 justify-center items-center text-center text-[{{ .Site.Data.theme.colors.default.theme_color.text_light }}]">
+    <div id="countdown" dir="ltr" class="grid grid-cols-2 py-8 sm:grid-cols-4 gap-6 justify-center items-center text-center text-white">
       <!-- Days -->
       <div>
-        <p id="days" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">10</p>
+        <p id="days" class="text-6xl font-bold">10</p>
         <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.days }}</p>
       </div>
       <!-- Hours -->
       <div>
-        <p id="hours" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">00</p>
+        <p id="hours" class="text-6xl font-bold">00</p>
         <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.hours }}</p>
       </div>
       <!-- Minutes -->
       <div>
-        <p id="minutes" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">00</p>
+        <p id="minutes" class="text-6xl font-bold">00</p>
         <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.minutes }}</p>
       </div>
       <!-- Seconds -->
       <div>
-        <p id="seconds" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">00</p>
+        <p id="seconds" class="text-6xl font-bold">00</p>
         <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.seconds }}</p>
       </div>
     </div>
     <div class="text-center mt-8">
       <a href="{{ .Params.countdown.button.link }}"
-        class="inline-block bg-white text-[{{ .Site.Data.theme.colors.default.theme_color.primary }}] font-[{{ .Site.Data.theme.fonts.font_weight.bold }}] py-3 px-8 rounded-lg shadow-md hover:bg-[{{ .Site.Data.theme.colors.default.theme_color.light }}] transition duration-300">
+        class="inline-block bg-white text-primary font-bold py-3 px-8 rounded-lg shadow-md hover:bg-light transition duration-300">
         {{ .Params.countdown.button.label }}
       </a>
     </div>
