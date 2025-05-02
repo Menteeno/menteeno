@@ -80,6 +80,84 @@
 {{ end }}
 <!-- /Features -->
 
+
+{{/*  CountDown  */}}
+
+<section id="countdown-section" class="section bg-gradient-to-r from-[{{ .Site.Data.theme.colors.default.theme_color.primary }}] to-[{{ .Site.Data.theme.colors.default.theme_color.dark }}] text-white p-8 py-22">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="text-3xl sm:text-4xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}] mb-6">
+        {{ .Params.countdown.title }}
+      </h2>
+      <p class="text-lg sm:text-xl mb-8">
+        {{ .Params.countdown.description }}
+      </p>
+    </div>
+    <div id="countdown" dir="ltr" class="grid grid-cols-2 py-8 sm:grid-cols-4 gap-6 justify-center items-center text-center text-[{{ .Site.Data.theme.colors.default.theme_color.text_light }}]">
+      <!-- Days -->
+      <div>
+        <p id="days" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">10</p>
+        <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.days }}</p>
+      </div>
+      <!-- Hours -->
+      <div>
+        <p id="hours" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">00</p>
+        <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.hours }}</p>
+      </div>
+      <!-- Minutes -->
+      <div>
+        <p id="minutes" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">00</p>
+        <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.minutes }}</p>
+      </div>
+      <!-- Seconds -->
+      <div>
+        <p id="seconds" class="text-6xl font-[{{ .Site.Data.theme.fonts.font_weight.bold }}]">00</p>
+        <p class="text-sm font-medium mt-2">{{ .Params.countdown.labels.seconds }}</p>
+      </div>
+    </div>
+    <div class="text-center mt-8">
+      <a href="{{ .Params.countdown.button.link }}"
+        class="inline-block bg-white text-[{{ .Site.Data.theme.colors.default.theme_color.primary }}] font-[{{ .Site.Data.theme.fonts.font_weight.bold }}] py-3 px-8 rounded-lg shadow-md hover:bg-[{{ .Site.Data.theme.colors.default.theme_color.light }}] transition duration-300">
+        {{ .Params.countdown.button.label }}
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  // Set the registration deadline (May 12, 2025, 23:59 CEST)
+  const deadline = new Date('{{ .Params.countdown.deadline }}');
+  function updateCountdown() {
+    const now = new Date();
+    const timeLeft = deadline - now;
+
+    if (timeLeft <= 0) {
+      document.getElementById('days').textContent = "0";
+      document.getElementById('hours').textContent = "0";
+      document.getElementById('minutes').textContent = "0";
+      document.getElementById('seconds').textContent = "0";
+      clearInterval(timerInterval);
+      return;
+    }
+
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    document.getElementById('days').textContent = days;
+    document.getElementById('hours').textContent = hours;
+    document.getElementById('minutes').textContent = minutes;
+    document.getElementById('seconds').textContent = seconds;
+  }
+
+  const timerInterval = setInterval(updateCountdown, 1000);
+  updateCountdown(); // Initial call to display immediately
+</script>
+
+{{/*  CountDown  */}}
+
 <!-- Testimonials -->
 {{ with site.GetPage "sections/testimonial" }}
 {{ if .Params.enable }}
@@ -206,10 +284,50 @@
 {{ end }}
 <!-- /Team Section -->
 
+{{/* */}}
 
-
-
+{{ with .Params.faq }}
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-8">FAQ</h2>
+    <div class="faq">
+      {{ range . }}
+      <div class="accordion">
+        <button class="accordion-header" data-accordion>
+          {{ .question | markdownify }}
+          <svg 
+            class="accordion-icon {{ if eq site.Language.LanguageDirection "rtl" }}rtl{{ end }}" 
+            x="0px" 
+            y="0px" 
+            viewBox="0 0 512 512" 
+            xmlspace="preserve">
+            <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+          </svg>
+          <style>
+            .accordion-icon {
+              transition: transform 0.3s ease;
+            }
+          
+            .accordion-icon.rtl {
+              transform: rotate(90deg);
+            }
+          </style>
+        </button>
+        <div class="accordion-content">
+          <ul class="faq-answers list-disc py-8 ps-6 leading-loose space-y-4">
+            {{ range .answers }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
 
 {{/* */}}
+
 
 {{ end }}
