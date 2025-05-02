@@ -57,8 +57,3 @@ code {
 blockquote > p {
   @apply !my-0;
 }
-
-[dir="rtl"] blockquote {
-  border-right-width: 1px !important;
-  border-left-width: 10px !important;
-}
