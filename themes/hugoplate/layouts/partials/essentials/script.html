@@ -64,7 +64,7 @@
   (function () {
     var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
     s1.async = true;
-    s1.src = 'https://embed.tawk.to/68154b95fc50e9190eb83be6/1iq9iuglr';
+    s1.src = '{{ if eq .Lang "fa" }}{{ .Site.Params.tawk.fa }}{{ else }}{{ .Site.Params.tawk.en }}{{ end }}';
     s1.charset = 'UTF-8';
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
