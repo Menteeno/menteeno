@@ -52,6 +52,13 @@
 .accordion-header {
   @apply text-text-dark dark:text-darkmode-text-dark;
 }
+.accordion-header.text-right {
+  @apply !text-right;
+}
+
+.accordion-header.text-left {
+  @apply !text-left;
+}
 
 /* cookie consent */
 .cookie-box {

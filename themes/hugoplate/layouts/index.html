@@ -4,6 +4,7 @@
 {{/* Shared Variables */}}
 {{ $arrowClass := cond (eq site.Language.LanguageDirection "rtl") "fa fa-arrow-left" "fa fa-arrow-right" }}
 {{ $positionClass := cond (eq site.Language.LanguageDirection "rtl") "right-0" "left-0" }}
+{{ $textAlignClass := cond (eq site.Language.LanguageDirection "rtl") "text-right" "text-left" }}
 
 <!-- Banner -->
 {{ with .Params.banner }}
@@ -293,7 +294,7 @@
     <div class="faq">
       {{ range . }}
       <div class="accordion">
-        <button class="accordion-header" data-accordion>
+        <button class="accordion-header {{ $textAlignClass }}" data-accordion>
           {{ .question | markdownify }}
           <svg 
             class="accordion-icon {{ if eq site.Language.LanguageDirection "rtl" }}rtl{{ end }}" 
