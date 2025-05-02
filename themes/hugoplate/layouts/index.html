@@ -13,7 +13,7 @@
     <div class="row justify-center">
       <div class="lg:col-7 md:col-9 mb-8 text-center">
         <h1 class="mb-4 text-h3 lg:text-h1">{{ .title | markdownify }}</h1>
-        <p class="mb-8">{{ .content | markdownify }}</p>
+        <p class="mb-8 leading-9">{{ .content | markdownify }}</p>
         {{ with .button }}
         {{ if .enable }}
         <a class="btn btn-primary" href="{{ .link | absURL }}" {{ if strings.HasPrefix .link `http` }}target="_blank"
@@ -83,7 +83,6 @@
 
 
 {{/*  CountDown  */}}
-
 <section id="countdown-section" class="section bg-gradient-to-r from-[#4CCB7C] to-[#38a864] text-white p-8 py-22">
   <div class="container">
     <div class="text-center">
@@ -315,11 +314,11 @@
           </style>
         </button>
         <div class="accordion-content">
-          <ul class="faq-answers list-disc py-8 ps-6 leading-loose space-y-4">
+          <div class="faq-answers pt-2 pb-4 pe-6 ps-6 leading-loose space-y-4">
             {{ range .answers }}
-            <li>{{ . | markdownify }}</li>
+            {{ . | markdownify }}
             {{ end }}
-          </ul>
+          </div>
         </div>
       </div>
       {{ end }}
