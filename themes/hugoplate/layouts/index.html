@@ -124,7 +124,6 @@
   </div>
 </section>
 
-
 <script>
   // Set the registration deadline (May 12, 2025, 23:59 CEST)
   const deadline = new Date('{{ .Params.countdown.deadline }}');
@@ -157,6 +156,34 @@
 </script>
 
 {{/*  CountDown  */}}
+
+
+{{/* Steps */}}
+<div class="py-12 sm:py-16 md:py-20 lg:py-24">
+  <div class="container mx-auto px-4 sm:px-6">
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 sm:mb-10 md:mb-12 bg-clip-text text-transparent bg-gradient-to-r from-primary to-dark">
+      {{ i18n "steps_title" }}
+    </h2>
+    <div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 relative">
+        {{ range .Params.steps }}
+        <div class="flex flex-col md:flex-row items-start md:items-center gap-4 sm:gap-6 md:gap-8 {{ $textAlignClass }}">
+          <div
+            class="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-105 flex-shrink-0">
+            <i class="fa {{ .icon }} {{ .icon_color }} fa-2x"></i>
+          </div>
+          <div class="{{ $textAlignClass }} flex-1">
+            <h3 class="text-lg sm:text-xl md:text-xl font-semibold text-text-primary mb-1 sm:mb-2">{{ .title }}</h3>
+            <p class="text-sm sm:text-base text-text-light">{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{/* Steps */}}
 
 <!-- Testimonials -->
 {{ with site.GetPage "sections/testimonial" }}
@@ -204,9 +231,6 @@
 {{ end }}
 {{ end }}
 <!-- /Testimonials -->
-
-
-{{/* */}}
 
 <!-- Team Section -->
 {{ with site.GetPage "sections/team" }}
@@ -284,8 +308,7 @@
 {{ end }}
 <!-- /Team Section -->
 
-{{/* */}}
-
+{{/* FAQ */}}
 {{ with .Params.faq }}
 <section class="section">
   <div class="container">
@@ -326,8 +349,7 @@
   </div>
 </section>
 {{ end }}
-
-{{/* */}}
+{{/* FAQ */}}
 
 
 {{ end }}
