@@ -6,7 +6,7 @@ banner:
   button:
     enable: true
     label: "I want to be in Menteeno!"
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+    link: "/fa/signup/"
 
 # Features
 features:
@@ -25,7 +25,7 @@ features:
     button:
       enable: true
       label: "Start your growth now"
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+      link: "/fa/signup/"
 
   - title: "Your winning card in today's work world is soft skills!"
     image: "/images/service-2.svg"
@@ -40,7 +40,7 @@ features:
     button:
       enable: true
       label: "Strengthen your skills – right now!"
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+      link: "/fa/signup/"
 
   - title: "🎯 Who is Menteeno designed for?"
     image: "/images/service-3.svg"
@@ -54,7 +54,7 @@ features:
     button:
       enable: true
       label: "Fill out the application form!"
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+      link: "/fa/signup/"
 
 # Countdown
 countdown:
@@ -69,7 +69,7 @@ countdown:
 
   button:
     label: "Register now"
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+    link: "/fa/signup/"
 
 # Process Steps
 steps:
@@ -134,5 +134,5 @@ faq:
       - "The deadline for registration for this program is **May 21, 2025**. If you are interested in participating, please act sooner rather than later."
   - question: "How can I register to participate in this boot camp?"
     answers:
-      - "To register for the Menteeno boot camp, just **[click here](https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog)** and fill out the online application form."
+      - "To register for the Menteeno boot camp, just **[click here](/fa/signup/)** and fill out the online application form."
 ---

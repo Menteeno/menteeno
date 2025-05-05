@@ -11,7 +11,7 @@ banner:
   button:
     enable: true
     label: "می‌خوام توی منتینو باشم!"
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+    link: "/fa/signup/"
 
 # ویژگی‌ها
 features:
@@ -31,7 +31,7 @@ features:
     button:
       enable: true
       label: "همین حالا رشدت رو شروع کن"
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+      link: "/fa/signup/"
 
   - title: "برگ برنده‌ت تو دنیای کاری امروز، مهارت‌های نرمه!"
     image: "/images/service-2.svg"
@@ -50,7 +50,7 @@ features:
     button:
       enable: true
       label: "مهارت‌هات رو تقویت کن – همین حالا!"
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+      link: "/fa/signup/"
 
   - title: "🎯 منتینو برای چه کسانی ساخته شده؟"
     image: "/images/service-3.svg"
@@ -64,7 +64,7 @@ features:
     button:
       enable: true
       label: "فرم درخواست رو پر کن!"
-      link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+      link: "/fa/signup/"
 
 # شمارش معکوس
 countdown:
@@ -79,7 +79,7 @@ countdown:
 
   button:
     label: "ثبت‌نام کنید"
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog"
+    link: "/fa/signup/"
 
 # مراحل فرآیند
 steps:
@@ -144,5 +144,5 @@ faq:
       - "آخرین مهلت ثبت‌نام برای این دوره **پایان اردیبهشت ماه ۱۴۰۴** هست. اگه مایلید شرکت کنید، زودتر اقدام کنید."
   - question: "چطوری می‌تونم برای شرکت تو این بوت کمپ ثبت‌نام کنم؟"
     answers:
-      - "برای ثبت‌نام تو بوت کمپ منتینو، کافیه **[اینجا کلیک کنید](https://docs.google.com/forms/d/e/1FAIpQLSdIb22zJ9nuk7cKfij7AvwdcbgyNIoYNSAdcwwtwTQLmq3pRg/viewform?usp=dialog)** و فرم درخواست آنلاین رو پر کنید."
+      - "برای ثبت‌نام تو بوت کمپ منتینو، کافیه **[اینجا کلیک کنید](/fa/signup/)** و فرم درخواست آنلاین رو پر کنید."
 ---

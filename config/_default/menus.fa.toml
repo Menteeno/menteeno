@@ -38,6 +38,10 @@ url = "/blog"
 parent = "صفحات"
 name = "قرارداد"
 url = "/contract"
+[[main]]
+parent = "صفحات"
+name = "درخواست عضویت"
+url = "signup"
 
 # [[main]]
 # parent = "صفحات"
