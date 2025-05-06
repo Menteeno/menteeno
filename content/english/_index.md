@@ -58,7 +58,7 @@ features:
 
 # Countdown
 countdown:
-  title: "⏳ Only 10 days left to register!"
+  title: "⏳ Only {number} days left to register!"
   description: "Don't miss the opportunity! Enhance your soft skills."
   deadline: "2025-05-12T21:59:00Z"
   labels:

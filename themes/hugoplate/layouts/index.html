@@ -86,7 +86,7 @@
 <section id="countdown-section" class="section bg-gradient-to-r from-[#4CCB7C] to-[#38a864] text-white p-8 py-22">
   <div class="container">
     <div class="text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+      <h2 id="countdown-title" class="text-3xl sm:text-4xl font-bold mb-6">
         {{ .Params.countdown.title }}
       </h2>
       <p class="text-lg sm:text-xl mb-8">
@@ -149,6 +149,7 @@
     document.getElementById('hours').textContent = hours;
     document.getElementById('minutes').textContent = minutes;
     document.getElementById('seconds').textContent = seconds;
+    document.getElementById('countdown-title').textContent = document.getElementById('countdown-title').textContent.replace("{number}", days);
   }
 
   const timerInterval = setInterval(updateCountdown, 1000);
