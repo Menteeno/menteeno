@@ -1,3 +1,81 @@
+/*------------------------*/
+/* preheader
+/*------------------------*/
+
+.preheader {
+  background: var(--textDark);
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+  border-bottom: 0.1rem solid var(--light);
+  font-weight: 500;
+}
+
+.preheader,
+.preheader a {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.preheader .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preheader .container a.icon {
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.preheader .container a.icon img {
+  height: 0.8em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+  position: relative;
+  bottom: 0.1em;
+  filter: invert(1);
+}
+
+body.transparent_header .preheader,
+body.transparent_header .preheader a {
+  color: white;
+}
+
+body.transparent_header .preheader .container a.icon img {
+  filter: invert(1) !important;
+}
+
+body:not(.transparent_header) .preheader.light {
+  background: var(--light);
+  font-weight: normal;
+}
+
+body.transparent_header .preheader {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.25);
+}
+
+body:not(.transparent_header) .preheader.light,
+body:not(.transparent_header) .preheader.light a {
+  color: var(--textMedium);
+}
+
+body:not(.transparent_header) .preheader.light .container a.icon img {
+  filter: invert(0);
+}
+
+@media (max-width: 600px) {
+  .preheader .container {
+    justify-content: center;
+  }
+
+  .preheader .container .icons {
+    display: none;
+  }
+}
+
 /* section style */
 .section {
   @apply py-24 xl:py-28;

@@ -1,5 +1,20 @@
 {{ $textAlignClass := cond (eq site.Language.LanguageDirection "rtl") "text-right" "text-left" }}
 
+<div class="preheader light">
+  <div class="container">
+    <div class="icons">
+      <a href="tel:+982191031614" class="icon">
+        <i class="fa-solid fa-phone black_2_textMedium"></i>
+        <span dir="ltr">021 9103 1614</span>
+      </a>
+      <a href="mailto:hi@menteeno.app" class="icon">
+        <i class="fa-solid fa-envelope black_2_textMedium"></i> hi@menteeno.app
+      </a>
+    </div>
+<div>هر روز ۱۰:۰۰ الی ۲۰:۰۰</div>
+  </div>
+</div>
+
 <header class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30 
   bg-white/10 dark:bg-black/10 backdrop-blur-xl 
   border border-white/20 dark:border-black/20 
