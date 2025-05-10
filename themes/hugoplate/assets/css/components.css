@@ -8,12 +8,6 @@
   padding: 0.6rem 1rem;
   border-bottom: 0.1rem solid var(--light);
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.preheader,
-.preheader a {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .preheader .container {
@@ -36,7 +30,6 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -51,7 +44,6 @@
 
 .preheader .working-hours {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 @media (min-width: 640px) {
@@ -81,11 +73,6 @@ body.transparent_header .preheader {
   width: 100%;
   z-index: 2;
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.25);
-}
-
-body:not(.transparent_header) .preheader.light,
-body:not(.transparent_header) .preheader.light a {
-  color: var(--textMedium);
 }
 
 body:not(.transparent_header) .preheader.light .container a.icon img {
