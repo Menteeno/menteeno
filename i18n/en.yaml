@@ -8,7 +8,12 @@ toc: Table of Contents
 share: Share
 search_input_placeholder: Search Post...
 search_no_results: No results for
-search_initial_message: Type something to search..
+search_initial_message: Type something to [phone_number]
+
+email_address: "Hi@Menteeno.app"
+working_hours: "Every day 10 AM to 8 PM"
+phone_number: "021 9103 1614"
+
 search_navigate: to navigate
 search_select: to select
 search_close: to close
