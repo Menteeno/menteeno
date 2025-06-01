@@ -58,19 +58,25 @@
 {{ partialCached "announcement-script.html" . }}
 
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function () {
-    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = '{{ if eq .Lang "fa" }}https://embed.tawk.to/68154b95fc50e9190eb83be6/1iq9iuglr{{ else }}https://embed.tawk.to/68154b95fc50e9190eb83be6/1iq9m96l9{{ end }}';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
+<!--Start of Chatwoot Script-->
+<script>
+  (function (d, t) {
+    var BASE_URL = "https://chat.menteeno.app";
+    var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+    g.src = BASE_URL + "/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g, s);
+    g.onload = function () {
+      window.chatwootSDK.run({
+        websiteToken: 'WmtQhoMHVP3tiExcWLDge5tP',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document, "script");
 </script>
-<!--End of Tawk.to Script-->
+
+<!--End of Chatwoot Script-->
 
 <!--Start of Clarity Script-->
 <script type="text/javascript">
