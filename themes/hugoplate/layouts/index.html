@@ -83,7 +83,7 @@
 
 
 {{/*  CountDown  */}}
-<section id="countdown-section" class="section bg-gradient-to-r from-[#4CCB7C] to-[#38a864] text-white p-8 py-22">
+{{/*  <section id="countdown-section" class="section bg-gradient-to-r from-[#4CCB7C] to-[#38a864] text-white p-8 py-22">
   <div class="container">
     <div class="text-center">
       <h2 id="countdown-title" class="text-3xl sm:text-4xl font-bold mb-6">
@@ -122,9 +122,9 @@
       </a>
     </div>
   </div>
-</section>
+</section>  */}}
 
-<script>
+{{/*  <script>
   // Set the registration deadline (May 12, 2025, 23:59 CEST)
   const deadline = new Date('{{ .Params.countdown.deadline }}');
   function updateCountdown() {
@@ -154,9 +154,42 @@
 
   const timerInterval = setInterval(updateCountdown, 1000);
   updateCountdown(); // Initial call to display immediately
-</script>
+</script>  */}}
 
 {{/*  CountDown  */}}
+
+{{/* Skills Section */}}
+{{ with site.GetPage "sections/skills" }}
+{{ if .Params.enable }}
+<section class="section {{ if modBool 2 2 }}bg-gradient{{ end }}">
+  <div class="container">
+    <div class="row">
+      <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
+        <h2 class="mb-4">{{ .Title | markdownify }}</h2>
+        <p class="text-lg">{{ .Params.description | markdownify }}</p>
+      </div>
+      <div class="col-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {{ range .Params.skills }}
+          <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-darkmode-theme-light p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1">
+            <div class="flex flex-col h-full relative z-10">
+              <div class="mb-6 size-16 rounded-full bg-primary/10 flex items-center justify-center">
+                <i class="fa {{ .icon }} {{ .icon_color }} fa-2x"></i>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">{{ .title }}</h3>
+              <p class="text-text-light dark:text-darkmode-text">{{ .description }}</p>
+            </div>
+            <div class="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 group-hover:bg-primary/10 transition-all duration-300"></div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+{{/* /Skills Section */}}
 
 
 {{/* Steps */}}
@@ -351,6 +384,5 @@
 </section>
 {{ end }}
 {{/* FAQ */}}
-
 
 {{ end }}
