@@ -6,11 +6,11 @@ draft: false
 content: '
 <h3 class="text-xl mb-4">Menteeno Collaboration Agreement</h3>
         <p>
-          This agreement establishes the relationship and obligations between Menteeno and you, as a Menteeno user (hereinafter referred to as "User" or "You"), for accessing mentorship and support services during the 6-month program. By signing this agreement, you formally accept all terms and conditions outlined herein.
+          This agreement establishes the relationship and obligations between Menteeno and you, as a Menteeno user (hereinafter referred to as "User" or "You"), for accessing mentorship and support services during the 3-month program. By signing this agreement, you formally accept all terms and conditions outlined herein.
         </p>
         <h4 class="my-6 text-lg">Section 1: Services Provided by Menteeno</h4>
         <p>
-          Menteeno will provide specialized mentorship and ongoing support services for 6 months, including:
+          Menteeno will provide specialized mentorship and ongoing support services for 3 months, including:
         </p>
         <ol>
           <li>
@@ -69,7 +69,7 @@ content: '
         </p>
         <h4 class="my-6 text-lg">Section 5: Financial Terms</h4>
         <p>
-          This program is entirely <strong>free</strong>. Users incur no financial obligations during the 6-month period.
+          This program is entirely <strong>free</strong>. Users incur no financial obligations during the 3-month period.
         </p>
         <h4 class="my-6 text-lg">Section 6: Confidentiality</h4>
         <p>
