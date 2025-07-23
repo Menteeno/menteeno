@@ -94,9 +94,9 @@
       <div class="col-12">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {{ range .Params.skills }}
-          <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-darkmode-theme-light p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1">
+          <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-[#181c20] p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1">
             <div class="flex flex-col h-full relative z-10">
-              <div class="mb-6 size-16 rounded-full bg-primary/10 flex items-center justify-center">
+              <div class="mb-6 size-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
                 <i class="fa {{ .icon }} {{ .icon_color }} fa-2x"></i>
               </div>
               <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">{{ .title }}</h3>
@@ -244,7 +244,7 @@
 <!-- Team Section -->
 {{ with site.GetPage "sections/team" }}
 {{ if .Params.enable }}
-<section class="section">
+<section class="section !py-0 !pt-1 xl:!py-18">
   <div class="container">
     <div class="row">
       <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
