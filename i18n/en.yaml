@@ -17,3 +17,7 @@ phone_number: "021 9103 1614"
 search_navigate: to navigate
 search_select: to select
 search_close: to close
+
+latest_blog_title: "Latest Blog Posts"
+latest_blog_subtitle: "Check out our most recent articles"
+latest_blog_button: "Read More"

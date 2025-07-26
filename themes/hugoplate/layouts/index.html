@@ -221,7 +221,13 @@
                     {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
                   </div>
                   <div class="ms-4">
-                    <h3 class="h5 font-primary font-semibold">{{ .name }}</h3>
+                    {{ if .link }}
+                      <h3 class="h5 font-primary font-semibold">
+                        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="hover:underline text-primary">{{ .name }}</a>
+                      </h3>
+                    {{ else }}
+                      <h3 class="h5 font-primary font-semibold">{{ .name }}</h3>
+                    {{ end }}
                     <p class="text-text-dark dark:text-white">{{ .designation | markdownify }}</p>
                   </div>
                 </div>
@@ -236,8 +242,40 @@
   </div>
 </section>
 {{ end }}
+
 {{ end }}
 <!-- /Testimonials -->
+
+<!-- Latest Blog Posts -->
+<section class="section bg-gradient">
+  <div class="container">
+    <div class="row">
+      <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
+        <h2 class="mb-4">{{ i18n "latest_blog_title" }}</h2>
+        <p class="text-lg">{{ i18n "latest_blog_subtitle" }}</p>
+      </div>
+      <div class="col-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {{ $posts := first 4 (where (site.RegularPages) "Section" "blog") }}
+          {{ range $posts }}
+          <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-[#181c20] p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1 flex flex-col">
+            {{ with .Params.image }}
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="mb-6 rounded-xl bg-primary/10 dark:bg-primary/20 object-cover mx-auto" style="height:220px;width:100%;max-width:340px;" />
+            {{ end }}
+            <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors text-center">
+              <a href="{{ .RelPermalink }}" class="block overflow-hidden text-ellipsis break-words" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 3.2em; line-height: 1.6em;">{{ .Title }}</a>
+            </h3>
+            <p class="text-text-light dark:text-darkmode-text mb-2 text-center">{{ .Summary | truncate 100 }}</p>
+            <a href="{{ .RelPermalink }}" class="mt-2 mx-auto text-primary hover:underline font-bold" style="background:none;border:none;box-shadow:none;">{{ i18n "latest_blog_button" }}</a>
+            <div class="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 group-hover:bg-primary/10 transition-all duration-300"></div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Latest Blog Posts -->
 
 
 
@@ -358,6 +396,7 @@
   </div>
 </section>
 {{ end }}
+
 {{/* FAQ */}}
 
 {{ end }}
