@@ -1,31 +1,36 @@
 ---
 enable: true
-title: "What Users Say About Menteeno"
-description: "Menteeno isn't just a training program; it's a transformative experience. Don't just take our word for it – read what our satisfied users have to say! Below are some user testimonials about Menteeno."
+title: "What Our Participants Say About Mentino"
+description: "Mentino isn't just an educational program — it's a transformative experience. Don’t just take our word for it — hear it straight from the people who’ve been there! Below are some real testimonials from our happy participants."
 
-# Testimonials
+# User Testimonials
 testimonials:
-  - name: "Leila Jafari"
-    designation: "Personal Development Coach"
-    avatar: "/images/avatar-sm.png"
-    content: "Menteeno helped me not only strengthen my soft skills but also move toward my career goals with a clear plan. It was an excellent experience!"
-
-  - name: "Mehdi Shayan"
-    designation: "Project Manager"
-    avatar: "/images/avatar-sm.png"
-    content: "Menteeno is an exceptional experience! Amazing mentors and completely practical training programs that helped me advance in my career."
-
-  - name: "Negar Hosseinzadeh"
+  - name: "Sarina Emadi"
     designation: "Software Developer"
-    avatar: "/images/avatar-sm.png"
-    content: "I recommend Menteeno to anyone looking for career growth. The mentors not only helped me improve my technical skills but also grow in managerial areas."
+    avatar: "/images/avatars/sarinaemadi_menteeno.png"
+    link: "https://www.linkedin.com/in/sarinaemadi"
+    content: "The unique format of Mentino sessions really puts me in the situation — I listen, I discover something new every time, and I feel even more motivated to show up. I'm honestly so glad I was part of it. I learned so many new things from each of you that will definitely help me both professionally and personally 😍"
 
-  - name: "Amir Pourmousavi"
-    designation: "Graphic Designer"
-    avatar: "/images/avatar-sm.png"
-    content: "I experienced Menteeno, and its difference from other programs was completely noticeable. The mentorship sessions helped me master communication skills and time management."
+  - name: "Homayoun Naji"
+    designation: "Web Developer"
+    avatar: "/images/avatars/homayoun_naji_menteeno.jpeg"
+    link: "https://www.linkedin.com/in/homayounnaji/"
+    content: "Just wanted to thank the Mentino team for tonight’s amazing session🔥 I honestly believe this program is different from any other I’ve attended — I felt that from the very start. Big thanks to the whole team for their tireless efforts❤️ and also to the amazing teammates I got to talk with during the session 😊"
 
-# Don't create a separate page
+  - name: "Fatemeh Sharif Dini"
+    designation: "Frontend Developer"
+    avatar: "/images/avatars/Fateme_Sharif_Dini_menteeno.jpeg"
+    link: "https://www.linkedin.com/in/fateme-sharif-dini/"
+    content: "Hope you’re all doing amaaazing! It was such a rich session. The fact that we were reflecting on the topic right then and there made it a fun challenge. Also, being surrounded by people on the same journey — that really stood out. I totally agree with Elham that Mentino’s approach is both fresh and exciting. Thanks to the awesome Mentino team and everyone in the sessions — I’m really happy to be here."
+
+  - name: "Elham Rivaz"
+    designation: "Software Student"
+    avatar: "/images/avatars/ElhamRivaz_menteeno.jpeg"
+    link: "https://www.linkedin.com/in/elham-rivaz-a87053336"
+    content: "Thanks to you and the whole team 🌸 I honestly had such a great time :) Mentino is really unlike any other personal development program I’ve experienced. I’m grateful for this fresh idea (I mean the whole Mentino vibe!) and your creative thinking space✨"
+
+# Do not generate a separate page
 build:
   render: "never"
+
 ---
