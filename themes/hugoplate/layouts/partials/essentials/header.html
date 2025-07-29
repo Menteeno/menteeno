@@ -1,23 +1,5 @@
 {{ $textAlignClass := cond (eq site.Language.LanguageDirection "rtl") "text-right" "text-left" }}
 
-<div class="preheader light !text-[#355e49] dark:!text-white">
-  <div class="container">
-    <div class="icons">
-      <a href="tel:+982191031614" class="icon">
-        <i class="fa-solid fa-phone"></i>
-        <span dir="ltr">{{ i18n "phone_number" }}</span>
-      </a>
-      <a href="mailto:hi@menteeno.app" class="icon">
-        <i class="fa-solid fa-envelope"></i>
-        <span>{{ i18n "email_address" }}</span>
-      </a>
-    </div>
-    <div class="working-hours">
-      {{ i18n "working_hours" }}
-    </div>
-  </div>
-</div>
-
 <header class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30 
   bg-white/10 dark:bg-black/10 backdrop-blur-xl 
   border border-white/20 dark:border-black/20 

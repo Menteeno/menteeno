@@ -10,9 +10,13 @@ search_input_placeholder: Search Post...
 search_no_results: No results for
 search_initial_message: Type something to [phone_number]
 
-email_address: "Hi@Menteeno.app"
-working_hours: "Every day 10 AM to 8 PM"
-phone_number: "021 9103 1614"
+email: "Email"
+email_address: "hi@menteeno.app"
+address: "Address"
+address_details: "Mazandaran, Babolsar, Nakhostvaziri St, Babolsar Innovation Center"
+phone: "Phone"
+phone_number: "+98 21 9103 1614"
+working_hours: "Saturday to Friday: 9 AM to 6 PM (Closed on Mondays)"
 
 search_navigate: to navigate
 search_select: to select
@@ -21,3 +25,5 @@ search_close: to close
 latest_blog_title: "Latest Blog Posts"
 latest_blog_subtitle: "Check out our most recent articles"
 latest_blog_button: "Read More"
+
+send_us_message: "Send Us A Message"

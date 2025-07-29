@@ -13,10 +13,16 @@ search_navigate: برای جابجایی
 search_select: برای انتخاب
 search_close: برای بستن
 
-email_address: "Hi@Menteeno.app"
-working_hours: "هر روز ۱۰ صبح تا ۸ شب"
-phone_number: "021 9103 1614"
+email: "ایمیل"
+email_address: "hi@menteeno.app"
+address: "آدرس"
+address_details: "مازندران، بابلسر، خیابان نخست‌وزیری، مرکز نوآوری بابلسر"
+phone: "تلفن"
+phone_number: "۰۲۱-۹۱۰۳۱۶۱۴"
+working_hours: "شنبه تا جمعه: ۹ صبح تا ۶ عصر (دوشنبه‌ها تعطیل)"
 
 latest_blog_title: "آخرین مطالب بلاگ"
 latest_blog_subtitle: "جدیدترین نوشته‌های ما را بخوانید"
 latest_blog_button: "ادامه مطلب"
+
+send_us_message: "ارسال پیام به ما"

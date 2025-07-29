@@ -16,32 +16,33 @@ weight = 1
 # url = "/elements"
 # weight = 3
 
+# [[main]]
+# weight = 4
+# name = "صفحات"
+
 [[main]]
-weight = 4
-name = "صفحات"
+name = "درخواست عضویت"
+url = "/signup"
+weight = 2
+
 
 [[main]]
 name = "وبلاگ"
 url = "/blog"
-
-# [[main]]
-# parent = "صفحات"
-# name = "تماس"
-# url = "/contact"
+weight = 4
 
 # [[main]]
 # parent = "صفحات"
 # name = "نویسندگان"
-# url = "/authors"
 
 [[main]]
-parent = "صفحات"
-name = "قرارداد"
-url = "/contract"
-[[main]]
-parent = "صفحات"
-name = "درخواست عضویت"
-url = "signup"
+name = "تماس با ما"
+url = "/contact-us/"
+weight = 3
+
+# [[main]]
+# name = "قرارداد"
+# url = "/contract"
 
 # [[main]]
 # parent = "صفحات"
