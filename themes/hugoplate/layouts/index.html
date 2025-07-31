@@ -94,7 +94,8 @@
       <div class="col-12">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {{ range .Params.skills }}
-          <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-[#181c20] p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1">
+          <div
+            class="group relative overflow-hidden rounded-xl bg-white dark:bg-[#181c20] p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1">
             <div class="flex flex-col h-full relative z-10">
               <div class="mb-6 size-16 rounded-full bg-primary/10 dark:bg-primary/20 flex items-center justify-center">
                 <i class="fa {{ .icon }} {{ .icon_color }} fa-2x"></i>
@@ -102,7 +103,9 @@
               <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">{{ .title }}</h3>
               <p class="text-text-light dark:text-darkmode-text">{{ .description }}</p>
             </div>
-            <div class="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 group-hover:bg-primary/10 transition-all duration-300"></div>
+            <div
+              class="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 group-hover:bg-primary/10 transition-all duration-300">
+            </div>
           </div>
           {{ end }}
         </div>
@@ -115,8 +118,8 @@
 {{/* /Skills Section */}}
 
 
-{{/*  CountDown  */}}
-{{/*  <section id="countdown-section" class="section bg-gradient-to-r from-[#4CCB7C] to-[#38a864] text-white p-8 py-22">
+{{/* CountDown */}}
+{{/* <section id="countdown-section" class="section bg-gradient-to-r from-[#4CCB7C] to-[#38a864] text-white p-8 py-22">
   <div class="container">
     <div class="text-center">
       <h2 id="countdown-title" class="text-3xl sm:text-4xl font-bold mb-6">
@@ -126,7 +129,8 @@
         {{ .Params.countdown.description }}
       </p>
     </div>
-    <div id="countdown" dir="ltr" class="grid grid-cols-2 py-8 sm:grid-cols-4 gap-6 justify-center items-center text-center text-white">
+    <div id="countdown" dir="ltr"
+      class="grid grid-cols-2 py-8 sm:grid-cols-4 gap-6 justify-center items-center text-center text-white">
       <!-- Days -->
       <div>
         <p id="days" class="text-6xl font-bold">10</p>
@@ -155,9 +159,10 @@
       </a>
     </div>
   </div>
-</section>  */}}
+</section> */}}
 
-{{/*  <script>
+{{/*
+<script>
   // Set the registration deadline (May 12, 2025, 23:59 CEST)
   const deadline = new Date('{{ .Params.countdown.deadline }}');
   function updateCountdown() {
@@ -187,9 +192,9 @@
 
   const timerInterval = setInterval(updateCountdown, 1000);
   updateCountdown(); // Initial call to display immediately
-</script>  */}}
+</script> */}}
 
-{{/*  CountDown  */}}
+{{/* CountDown */}}
 
 
 <!-- Testimonials -->
@@ -222,11 +227,12 @@
                   </div>
                   <div class="ms-4">
                     {{ if .link }}
-                      <h3 class="h5 font-primary font-semibold">
-                        <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="hover:underline text-primary">{{ .name }}</a>
-                      </h3>
+                    <h3 class="h5 font-primary font-semibold">
+                      <a href="{{ .link }}" target="_blank" rel="noopener noreferrer"
+                        class="hover:underline text-primary">{{ .name }}</a>
+                    </h3>
                     {{ else }}
-                      <h3 class="h5 font-primary font-semibold">{{ .name }}</h3>
+                    <h3 class="h5 font-primary font-semibold">{{ .name }}</h3>
                     {{ end }}
                     <p class="text-text-dark dark:text-white">{{ .designation | markdownify }}</p>
                   </div>
@@ -258,16 +264,37 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {{ $posts := first 4 (where (site.RegularPages) "Section" "blog") }}
           {{ range $posts }}
-          <div class="group relative overflow-hidden rounded-xl bg-white dark:bg-[#181c20] p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1 flex flex-col">
+          <div
+            class="group relative overflow-hidden rounded-xl bg-white dark:bg-[#181c20] p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-border dark:border-darkmode-border transform hover:-translate-y-1 flex flex-col">
             {{ with .Params.image }}
-            <img src="{{ . | relURL }}" alt="{{ $.Title }}" class="mb-6 rounded-xl bg-primary/10 dark:bg-primary/20 object-cover mx-auto" style="height:220px;width:100%;max-width:340px;" />
+            <img src="{{ . | relURL }}" alt="{{ $.Title }}"
+              class="mb-6 rounded-xl bg-primary/10 dark:bg-primary/20 object-cover mx-auto"
+              style="height:220px;width:100%;max-width:340px;" />
             {{ end }}
-            <h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors text-center">
-              <a href="{{ .RelPermalink }}" class="block overflow-hidden text-ellipsis break-words" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; max-height: 3.2em; line-height: 1.6em;">{{ .Title }}</a>
+            <h3 class="text-lg font-semibold mb-3 group-hover:text-primary transition-colors text-center">
+              <a href="{{ .RelPermalink }}" class="block overflow-hidden text-ellipsis break-words"
+                style="display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; max-height: 3.2em; line-height: 1.6em;">{{
+                .Title }}</a>
             </h3>
-            <p class="text-text-light dark:text-darkmode-text mb-2 text-center">{{ .Summary | truncate 100 }}</p>
-            <a href="{{ .RelPermalink }}" class="mt-2 mx-auto text-primary hover:underline font-bold" style="background:none;border:none;box-shadow:none;">{{ i18n "latest_blog_button" }}</a>
-            <div class="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 group-hover:bg-primary/10 transition-all duration-300"></div>
+            <div class="text-text-light dark:text-darkmode-text mb-2 text-center text-md [&_*]:text-md"
+              style="font-size:1rem;">
+              <style>
+                /* Prevent any child from having font-size larger than text-md (1rem) */
+                .text-md,
+                .text-md *,
+                .text-md :is(*) {
+                  font-size: 0.9rem !important;
+                  line-height: 1.5 !important;
+                  font-weight: 200 !important;
+                }
+              </style>
+              {{ .Summary | truncate 100 }}
+            </div>
+            <a href="{{ .RelPermalink }}" class="mt-2 mx-auto text-primary hover:underline font-bold"
+              style="background:none;border:none;box-shadow:none;">{{ i18n "latest_blog_button" }}</a>
+            <div
+              class="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-primary/5 group-hover:bg-primary/10 transition-all duration-300">
+            </div>
           </div>
           {{ end }}
         </div>
@@ -365,19 +392,17 @@
       <div class="accordion">
         <button class="accordion-header {{ $textAlignClass }}" data-accordion>
           {{ .question | markdownify }}
-          <svg 
-            class="accordion-icon {{ if eq site.Language.LanguageDirection "rtl" }}rtl{{ end }}" 
-            x="0px" 
-            y="0px" 
-            viewBox="0 0 512 512" 
-            xmlspace="preserve">
-            <path fill="currentColor" d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z"></path>
+          <svg class="accordion-icon {{ if eq site.Language.LanguageDirection " rtl" }}rtl{{ end }}" x="0px" y="0px"
+            viewBox="0 0 512 512" xmlspace="preserve">
+            <path fill="currentColor"
+              d="M505.755,123.592c-8.341-8.341-21.824-8.341-30.165,0L256.005,343.176L36.421,123.592c-8.341-8.341-21.824-8.341-30.165,0 s-8.341,21.824,0,30.165l234.667,234.667c4.16,4.16,9.621,6.251,15.083,6.251c5.462,0,10.923-2.091,15.083-6.251l234.667-234.667 C514.096,145.416,514.096,131.933,505.755,123.592z">
+            </path>
           </svg>
           <style>
             .accordion-icon {
               transition: transform 0.3s ease;
             }
-          
+
             .accordion-icon.rtl {
               transform: rotate(90deg);
             }
