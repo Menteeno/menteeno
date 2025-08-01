@@ -1,7 +1,7 @@
 <div class="bg-body dark:bg-darkmode-body">
   {{ $image:= .Params.image }}
   {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded aspect-square object-cover") }}
   {{ end }}
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">
@@ -11,7 +11,6 @@
   {{ $categories:= .Params.categories }}
   {{ if $categories }}
     <ul class="mb-4">
-      <li class="mr-4 inline-block">
         <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
           <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
         </a>
